@@ -1,8 +1,8 @@
-CREATE TABLE IF NOT EXISTS
-student(
-  id SERIAL PRIMARY KEY NOT NULL,
-  name VARCHAR(256) NOT NULL,
-  course VARCHAR(256) NOT NULL
+DROP TABLE IF EXISTS people;
+
+CREATE TABLE IF NOT EXISTS people(
+    first_name VARCHAR(255),
+    last_name VARCHAR(255)
 );
 
 INSERT INTO student ('student1', '301d15');
